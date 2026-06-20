@@ -1,0 +1,103 @@
+# Arithmetic Operators and Special Operators Assignment
+
+
+# Part 1: Arithmetic Operators
+
+
+def rectangle_properties(length, width):
+    area = length * width          # multiplication
+    perimeter = 2 * (length + width)  # addition and multiplication
+    print(f"Area: {area}, Perimeter: {perimeter}")
+
+rectangle_properties(10, 5)
+
+
+
+# Part 2: Comparison Operators
+
+
+def compare_numbers(a, b):
+    if a > b:
+        print(f"{a} is greater than {b}")
+    elif a < b:
+        print(f"{a} is smaller than {b}")
+    elif a == b:
+        print(f"{a} is equal to {b}")
+    if a != b:
+        print(f"{a} is not equal to {b}")
+    if a >= b:
+        print(f"{a} is greater than or equal to {b}")
+    if a <= b:
+        print(f"{a} is smaller than or equal to {b}")
+
+compare_numbers(7, 10)
+compare_numbers(10, 10)
+
+
+
+# Part 3: Logical Operators
+
+
+def logical_demo(num, text):
+    # Check if number is within range
+    if num > 0 and num < 100:
+        print(f"{num} is between 0 and 100")
+
+    # Check if string matches pattern
+    if text == "Python" or text == "python":
+        print("String matches 'Python'")
+
+    # Using not
+    if not (num < 0):
+        print(f"{num} is not negative")
+
+logical_demo(50, "Python")
+logical_demo(-5, "Java")
+
+
+
+# Part 4: Assignment Operators
+
+
+x = 10
+print("Initial x:", x)
+
+x += 5   # add and assign
+print("After x += 5:", x)
+
+x -= 3   # subtract and assign
+print("After x -= 3:", x)
+
+x *= 2   # multiply and assign
+print("After x *= 2:", x)
+
+x /= 4   # divide and assign
+print("After x /= 4:", x)
+
+x %= 3   # modulus and assign
+print("After x %= 3:", x)
+
+x **= 2  # exponentiation and assign
+print("After x **= 2:", x)
+
+
+
+# Part 5: Identity & Membership Operators
+
+
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
+
+# Identity operators
+print("a is b:", a is b)           # True (same object)
+print("a is c:", a is c)           # False (different objects with same values)
+print("a is not c:", a is not c)   # True
+
+# Membership operators
+print("2 in a:", 2 in a)           # True
+print("5 not in a:", 5 not in a)   # True
+
+text = "Hello Python"
+print("'Python' in text:", "Python" in text)
+print("'Java' not in text:", "Java" not in text)
